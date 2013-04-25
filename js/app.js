@@ -60,10 +60,6 @@ App.XmlController = Ember.Controller.extend({
 	inline: false,
 	clearDisabled: true,
 	
-	process: function(data) {
-		data && this.send('xmlrender', data);
-	},
-	
 	generate: function(tag) {
 		if (tag instanceof App.XmlController) {
 			tag = this.get('tag');
@@ -93,7 +89,7 @@ App.XmlView = Ember.View.extend({
 		var $target = $(e.target).find('.field'),
 			data = $target.val();
 		if (data) {
-			this.get('controller').send('process', data);
+			this.get('controller').send('xmlrender', data);
 		}
 		else {
 			$target.focus();
