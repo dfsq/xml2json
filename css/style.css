@@ -62,3 +62,10 @@ pre div {white-space: nowrap;}
 .parse-result pre {
 	min-height: 350px;
 }
+
+.add-this {
+	width: 140px;
+}
+.add-this > div {
+	margin-top: 8px;
+}
