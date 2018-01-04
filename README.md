@@ -1,6 +1,6 @@
 # XML2JSON Converter
 
-Convinient online XML to JSON converter, written using EmberJS.
+Convenient online XML to JSON converter, written using EmberJS.
 
 ## Demonstration
 
